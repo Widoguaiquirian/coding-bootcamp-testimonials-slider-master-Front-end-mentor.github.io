@@ -5,7 +5,6 @@ const container = document.querySelector(".testimonials");
 const boxes = document.querySelectorAll(".testimonials__box");
 
 let idx = 0;
-let interval = setInterval(run, 3000);
 
 function run() {
    idx++;
@@ -20,23 +19,16 @@ function changeImage() {
    }
 
    boxes.forEach(function (box) {
-      box.style.transform = `translateY(${-idx * box.clientHeight}px)`;
+      box.style.transform = `translateX(${-idx * box.clientWidth}px)`;
    });
-}
-
-function resetInterval() {
-   clearInterval(interval);
-   interval = setInterval(run, 3000);
 }
 
 btnNext.addEventListener("click", function () {
    idx++;
    changeImage();
-   resetInterval();
 });
 
 btnPrev.addEventListener("click", function () {
    idx--;
    changeImage();
-   resetInterval();
 });
