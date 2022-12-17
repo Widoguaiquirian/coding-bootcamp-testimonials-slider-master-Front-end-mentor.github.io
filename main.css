@@ -27,3 +27,15 @@ Safari V.
       =index
 
 */
+
+/*missing alt attribute*/
+img:not([alt]) {
+   outline: 5px dashed red;
+   outline-offset: 5px;
+}
+
+/*empty alt attribute*/
+img[alt=""] {
+   outline: 5px solid blue;
+   outline-offset: 15px;
+}
