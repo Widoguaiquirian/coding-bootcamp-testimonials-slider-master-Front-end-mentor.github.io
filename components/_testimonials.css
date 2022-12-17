@@ -104,7 +104,7 @@
 @media (max-width: 1440px) {
    .testimonials {
       width: 375px;
-      border: 1px solid red;
+
       height: 667px;
       position: relative;
       overflow: hidden;
@@ -113,7 +113,6 @@
    .caja {
       width: 750px;
       height: 667px;
-      border: 1px solid yellow;
       display: flex;
    }
 
