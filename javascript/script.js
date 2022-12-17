@@ -21,6 +21,7 @@ function changeImage() {
 
    boxes.forEach(function (box) {
       box.style.transform = `translateX(${-idx * box.clientWidth}px)`;
+      // The minus is because I want to move in the left direction the images
    });
 }
 
@@ -39,4 +40,15 @@ btnPrev.addEventListener("click", function () {
    idx--;
    changeImage();
    resetInterval();
+});
+
+// Keyboard handler
+document.addEventListener("keydown", function (e) {
+   if (e.key === "Arrowleft") {
+      idx--;
+      changeImage();
+   } else if (e.key === "ArrowRight") {
+      idx++;
+      changeImage();
+   }
 });
