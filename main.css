@@ -1,0 +1,29 @@
+@import url(abstracts/_functions.css);
+@import url(abstracts/_mixins.css);
+@import url(abstracts/_variables.css);
+
+@import url(base/_base.css);
+@import url(base/_typography.css);
+
+@import url(components/_testimonials.css);
+
+/*CSS Stylesheet T.O.C. - Table of contents
+Created XX April XXXX
+Last update April XX: 
+
+
+Compatible Browser:
+Firefox V.85.0.2 (64-bit)
+Chrome V.89.0.4389.90 (Build oficial) (64 bits)
+Edge V.89.0.774.54 (Compilación oficial) (64 bits)
+Safari V. 
+
+
+=RESET % CONDITIONAL COMMENT
+=GENERAL
+=LAYOUT:
+=PAGES
+
+      =index
+
+*/

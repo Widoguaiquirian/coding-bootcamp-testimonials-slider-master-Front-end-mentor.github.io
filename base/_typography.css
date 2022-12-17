@@ -1,0 +1,36 @@
+body {
+   color: black;
+   font-family: "Inter", sans-serif;
+   line-height: 1.6;
+}
+
+h1 {
+   margin: 0;
+}
+
+h3 {
+   margin: 0;
+   padding: 0;
+   color: var(--dark-blue);
+   font-weight: normal;
+   font-size: 3.2rem;
+   line-height: 1.4;
+}
+
+.testimonials__professional {
+   font-size: 2rem;
+   color: var(--dark-blue);
+   margin: 0;
+   display: inline;
+}
+
+.testimonials__position {
+   margin: 0;
+   font-size: 2rem;
+   color: var(--grayish-blue);
+   display: inline;
+}
+
+a {
+   text-decoration: none;
+}
