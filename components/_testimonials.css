@@ -7,7 +7,7 @@
 }
 
 .caja {
-   width: 2880px;
+   width: 4320px;
    height: 800px;
    display: flex;
 }
@@ -111,7 +111,7 @@
    }
 
    .caja {
-      width: 750px;
+      width: 1125px;
       height: 667px;
       display: flex;
    }
