@@ -5,6 +5,7 @@ const container = document.querySelector(".testimonials");
 const boxes = document.querySelectorAll(".testimonials__box");
 
 let idx = 0;
+let interval = setInterval(run, 3000);
 
 function run() {
    idx++;
@@ -23,12 +24,19 @@ function changeImage() {
    });
 }
 
+function resetInterval() {
+   clearInterval(interval);
+   interval = setInterval(run, 3000);
+}
+
 btnNext.addEventListener("click", function () {
    idx++;
    changeImage();
+   resetInterval();
 });
 
 btnPrev.addEventListener("click", function () {
    idx--;
    changeImage();
+   resetInterval();
 });
